@@ -100,9 +100,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the playbook file to Anisble container node.
 - Update the /etc/ansible/hosts file to include...
-- $ansible-playbook install_elk.yml elk
-- $ansible-playbook install_filebeat.yml webservers
-- $ansible-playbook install_metricbeat.yml webservers 
+1 $ansible-playbook install_elk.yml elk
+2 $ansible-playbook install_filebeat.yml webservers
+3 $ansible-playbook install_metricbeat.yml webservers 
 - Run the playbook, and navigate to Kibana (http://20.36.45.243:5601/app/kibana) to check that the installation worked as expected.
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
