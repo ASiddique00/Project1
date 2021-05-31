@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  - Install-elk.yml (https://github.com/ASiddique00/Project1/blob/main/Ansible/Install-elk.yml.txt)
 
 This document contains the following details:
 - Description of the Topologu
@@ -21,22 +21,27 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly avaiable, in addition to restricting in-bound access to the network.
+- Load balancing ensures Availabitlity, Web traffic and Websecurity.
+- The jumpbox ensures to minimize the any cyber attacks by ensuring remote connections to the cloud network through a single virtual machine via access control and security.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the jumpbox and system network.
+- Monitors the file changes to VM machine
+- Collects the metric records from the machine and services running on the server machine
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+|Name         | Function    | IP Address    | Operating System |
+|-------------|-------------|---------------|------------------|
+| Jump Box    | Gateway     |52.189.217.190 | Linux            |
+|             |             |10.0.0.4       |                  |
+|Web-1        | Webserver   |10.0.0.5       | Linux            |
+|Web-2        | Webserver   |10.0.0.6       | Linux            |
+|Web-2        | Webserver   |10.0.0.10      | Linux            |
+|ELK Server   |ELK Server   |20.36.45.243   | Linux            |
+|             |             |10.2.0.4       |                  |
+|Load Balancer|Load Balancer|191.239.180.217| Linux            |
 
 ### Access Policies
 
