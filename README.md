@@ -103,6 +103,6 @@ SSH into the control node and follow the steps below:
 - $ansible-playbook install_elk.yml elk
 - $ansible-playbook install_filebeat.yml webservers
 - $ansible-playbook install_metricbeat.yml webservers 
-- Run the playbook, and navigate to Kibana (http://20.36.45.212:5601/app/kibana) to check that the installation worked as expected.
+- Run the playbook, and navigate to Kibana (http://20.36.45.243:5601/app/kibana) to check that the installation worked as expected.
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
